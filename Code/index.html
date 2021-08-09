@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/094c35d6d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </script>
+    <title>Nepal Auto</title>
+</head>
+
+<body>
+    <!--Above header contents-->
+    <div class="abv-header">
+        <div class="abv-header-iconLinks">
+            <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook" id="fb-abv-hdr"></i></a>
+            <a href="https://www.youtube.com" target="blank"><i class="fab fa-youtube" id="yt-abv-hdr"></i></a>
+            <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter" id="tw-abv-hdr"></i></a>
+        </div>
+        <div class="abv-header-cont">
+           BUY, SELL & EXCHANGE CARS WITH US.
+        </div>
+        <div class="abv-header-phone">
+            <i class="fas fa-phone-square-alt"></i> 015234567,015276543, 9851012345
+        </div>
+    </div>
+
+    <!--NavBar and Contents-->
+    <nav id="navbar">
+      <div class="image-logo">
+          <img src="..//Photos/NepalAutoLogo.png" alt="" height="75px">
+      </div>
+        <ul id="navList">
+            </li><i class="fas fa-times" onclick = "hideMenu()"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallary.html">Cars</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+    <!--Image Slider-->
+
+    <div class="imageSlider">
+        <div class="slider">
+          <img src="../Photos/slider/img1.jpg" style="width:100%">
+        </div>
+
+        <div class="slider">
+          <img src="../Photos/slider/img2.jpg" style="width:100%">
+        </div>
+
+        <div class="slider">
+          <img src="../Photos/slider/img3.jpg" style="width:100%">
+      </div>
+
+      <!--Cars for Buy, Sell, Exchange and Valuation-->
+      <div class="cardsContainer">
+          <div class="cards" onclick="openGallary()">
+              <i class="far fa-money-bill-alt" style="font-size: 48px; margin-bottom: 7px;"></i>
+              <h1 id="cardsHeader">Buy</h1>
+              <p id="cardsContent">We have the collection of best cars in the town. Get your dream car for the best cost from Auto Nepal.</p>
+          </div>
+          <div class="cards" onclick="openValidationForm()">
+            <i class="fas fa-cart-arrow-down" style="font-size:48px; margin-bottom: 7px;"></i>
+              <h1 id="cardsHeader">Sell</h1>
+              <p id="cardsContent">Bring Us car of any condition.We will give you the best price for your car. We will pay you right away</p>
+          </div>
+          <div class="cards" onclick="openValidationForm()">
+            <i class="fas fa-exchange-alt" style="font-size: 48px; margin-bottom: 7px;"></i>
+              <h1 id="cardsHeader">Exchange</h1>
+              <p id="cardsContent">Give up on your old cars and take a new one for the cheapest possible price for the best condition. </p>
+          </div>
+          <div class="cards" onclick="openValidationForm()">
+            <i class="fas fa-cogs" style="font-size: 48px; margin-bottom: 7px;"></i>
+            <h1 id="cardsHeader">Valuation</h1>
+            <p id="cardsContent">Here at Auto Nepal we value your car as we value your time and effort to get it.</p>
+          </div>   
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-contact">
+           <h1> <i class="fas fa-phone-square-alt"></i> Contact</h1>
+          <br>
+          <span> Phone : 015234567,015276543</span> <br>
+          <span> Mobile : 9851012345</span> <br>
+          <span> Gmail : nepalauto@gmail.com</span> <br>
+          <span> Location : Kathmandu, Nepal</span> <br>
+        </div>
+        <div class="footer-navigation">
+          <h1>Navigation</h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallary.html">Cars</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+        <div class="footer-map">
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14131.219138211021!2d85.28258369999999!3d27.69242785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1628334251879!5m2!1sen!2snp" width="500px" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </footer>
+
+    <div class="copy-footer">
+      <p> Nepal Auto Copyright© 2020 || All rights reserved</p>
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      <script>
+
+        function openGallary(){
+          location.href="gallary.html";
+        }
+        function openValidationForm(){
+          location.href="valuation.html";
+        }
+
+        let navList = document.getElementById("navList");
+        function showMenu(){
+          navList.style.right="0";
+          navList.style.display="flex";
+        }
+
+        function hideMenu(){
+            navList.style.right = "-100%";
+        }
+        
+      </script>
+      <script type="text/javascript">
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() 
+        {
+          var i;
+          var slides = document.getElementsByClassName("slider");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 5000);
+        }
+      </script>
+</body>
+
+</html>

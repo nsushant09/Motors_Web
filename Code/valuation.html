@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepal Auto : Valuation Form</title>
+    <link rel="stylesheet" href="valuation.css">
+    <script src="https://kit.fontawesome.com/094c35d6d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Above header contents-->
+    <div class="abv-header">
+        <div class="abv-header-iconLinks">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook" id="fb-abv-hdr"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube" id="yt-abv-hdr"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter" id="tw-abv-hdr"></i></a>
+        </div>
+        <div class="abv-header-cont">
+           BUY, SELL & EXCHANGE CARS WITH US.
+        </div>
+        <div class="abv-header-phone">
+            <i class="fas fa-phone-square-alt"></i> 015234567,015276543, 9851012345
+        </div>
+    </div>
+
+    <!--NavBar and Contents-->
+    <nav id="navbar">
+      <div class="image-logo">
+          <img src="..//Photos/NepalAutoLogo.png" alt="" height="75px">
+      </div>
+        <ul id="navList">
+            </li><i class="fas fa-times" onclick = "hideMenu()"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallary.html">Cars</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+    <div id="txt">Home || Cars Valuation</div>
+    <section class="valuationSection">
+      <h1>Valuation Form</h1>
+      <div class="valuation-form">
+        <form name="valuationForm">
+                <input type="text" name="Name"  placeholder="Your Name"  required>
+                <input type="text" name="Phone" placeholder="Phone" required>
+                <input type="file" name="Images" required>
+                <input type="text" name="Kilometer" placeholder="Kilometers" required >
+                <input type="text" name="CarModel" placeholder="Car Model" required>
+                <textarea name="Description" cols="30" rows="10" placeholder="Other Details"></textarea>
+                <input type="submit" value="Submit" id="submitBtn" >
+            </form>
+        </div>
+    </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-contact">
+               <h1> <i class="fas fa-phone-square-alt"></i> Contact</h1>
+              <br>
+              <span> Phone : 015234567,015276543</span> <br>
+              <span> Mobile : 9851012345</span> <br>
+              <span> Gmail : nepalauto@gmail.com</span> <br>
+              <span> Location : Kathmandu, Nepal</span> <br>
+            </div>
+            <div class="footer-navigation">
+              <h1>Navigation</h1>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallary.html">Cars</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            </div>
+            <div class="footer-map">
+              <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14131.219138211021!2d85.28258369999999!3d27.69242785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1628334251879!5m2!1sen!2snp" width="500px" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </footer>
+    
+        <div class="copy-footer">
+          <p> Nepal Auto Copyright© 2020 || All rights reserved</p>
+        </div>
+
+        <script>
+    
+            let navList = document.getElementById("navList");
+            function showMenu(){
+          navList.style.right="0";
+          navList.style.display="flex";
+        }
+
+        function hideMenu(){
+            navList.style.right = "-100%";
+        }
+            
+          </script>
+</body>
+</html>
